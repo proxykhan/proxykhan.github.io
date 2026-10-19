@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mohammed Azhar Khan · AI / ML Engineer</title>
   <meta name="description" content="Portfolio of Mohammed Azhar Khan, AI/ML Engineer from Kalaburagi, India. Production ML systems: electricity demand forecasting with drift monitoring, a multi-agent LangGraph research assistant and knowledge-graph RAG.">
   <meta name="author" content="Mohammed Azhar Khan">
-  <meta name="theme-color" content="#07090f">
+  <meta name="theme-color" content="#f7f5ee">
   <link rel="canonical" href="https://proxykhan.github.io/">
 
   <meta property="og:type" content="website">
@@ -21,7 +21,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <script>
     document.documentElement.classList.add("js");
@@ -104,7 +104,7 @@
       </ul>
 
       <div class="nav-actions">
-        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light theme">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to dark theme">
           <svg class="icon icon-sun"><use href="#i-sun"/></svg>
           <svg class="icon icon-moon"><use href="#i-moon"/></svg>
         </button>
@@ -122,56 +122,34 @@
   <main id="main">
     <!-- ===================== HERO ===================== -->
     <section id="home" class="hero">
-      <canvas class="hero-canvas" aria-hidden="true"></canvas>
-      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="kicker hero-kicker"><svg class="icon"><use href="#i-pin"/></svg> Kalaburagi, India</p>
+        <h1 class="hero-title">
+          <span class="hero-hello">Hi, I'm</span>
+          Mohammed <span class="nowrap">Azhar Khan</span>
+        </h1>
+        <p class="hero-role">AI / Machine Learning Engineer</p>
+        <p class="hero-typed" aria-label="I build forecasting systems that retrain themselves, multi-agent research assistants, graph-grounded RAG with verified citations and benchmark data for frontier AI labs.">
+          <span aria-hidden="true">I build <strong class="typed" data-phrases='["forecasting systems that retrain themselves.","multi-agent research assistants.","graph-grounded RAG with verified citations.","benchmark data for frontier AI labs."]'>forecasting systems that retrain themselves.</strong><span class="caret"></span></span>
+        </p>
+        <p class="hero-lead">
+          B.E. in AI &amp; ML (2026). I review and correct LLM-generated code at
+          <strong>Invisible Technologies</strong> for benchmarking programs run by frontier AI labs, and I build and deploy
+          complete ML systems, from data ingestion to monitored production APIs.
+        </p>
 
-      <div class="container hero-grid">
-        <div class="hero-copy">
+        <div class="hero-cta">
+          <a class="btn btn-go" href="#projects">View my work <span class="go"><svg class="icon"><use href="#i-arrow-right"/></svg></span></a>
+          <a class="btn btn-ghost" href="assets/Mohammed-Azhar-Khan-Resume.pdf" download><svg class="icon"><use href="#i-download"/></svg> Download resume</a>
           <span class="status-pill"><span class="pulse-dot"></span>Available for AI / ML roles</span>
-          <h1 class="hero-title">
-            <span class="hero-hello">Hi, I'm</span>
-            Mohammed <span class="grad-text nowrap">Azhar Khan</span>
-          </h1>
-          <p class="hero-role">AI / Machine Learning Engineer</p>
-          <p class="hero-typed" aria-label="I build forecasting systems that retrain themselves, multi-agent research assistants, graph-grounded RAG with verified citations and benchmark data for frontier AI labs.">
-            <span aria-hidden="true">I build <span class="typed" data-phrases='["forecasting systems that retrain themselves.","multi-agent research assistants.","graph-grounded RAG with verified citations.","benchmark data for frontier AI labs."]'>forecasting systems that retrain themselves.</span><span class="caret"></span></span>
-          </p>
-          <p class="hero-lead">
-            B.E. in AI &amp; ML (2026). I review and correct LLM-generated code at
-            <strong>Invisible Technologies</strong> for benchmarking programs run by frontier AI labs, and I build and deploy
-            complete ML systems, from data ingestion to monitored production APIs.
-          </p>
-
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="#projects">View my work <svg class="icon"><use href="#i-arrow-right"/></svg></a>
-            <a class="btn btn-ghost" href="assets/Mohammed-Azhar-Khan-Resume.pdf" download><svg class="icon"><use href="#i-download"/></svg> Download resume</a>
-          </div>
-
-          <ul class="socials" aria-label="Profiles">
-            <li><a href="https://github.com/proxykhan" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a></li>
-            <li><a href="https://www.linkedin.com/in/md-azhar-khan" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a></li>
-            <li><a href="mailto:mdazhark79@gmail.com" aria-label="Email"><svg class="icon"><use href="#i-mail"/></svg></a></li>
-            <li><a href="https://huggingface.co/Azharkhan79" target="_blank" rel="noopener" aria-label="Hugging Face"><svg class="icon"><use href="#i-smile"/></svg></a></li>
-            <li class="socials-loc"><svg class="icon"><use href="#i-pin"/></svg> Kalaburagi, India</li>
-          </ul>
         </div>
 
-        <div class="hero-visual">
-          <div class="portrait">
-            <div class="portrait-glow" aria-hidden="true"></div>
-            <div class="portrait-frame"><div class="portrait-clip">
-              <img src="assets/img/avatar.jpg" alt="Portrait of Mohammed Azhar Khan" width="460" height="460"></div>
-            </div>
-            <span class="float-chip chip-a"><span class="chip-dot"></span>LightGBM</span>
-            <span class="float-chip chip-b"><span class="chip-dot"></span>LangGraph</span>
-            <span class="float-chip chip-c"><span class="chip-dot"></span>FastAPI</span>
-            <div class="now-card">
-              <span class="now-label">Now</span>
-              <span class="now-title">AI Trainer</span>
-              <span class="now-org">Invisible Technologies</span>
-            </div>
-          </div>
-        </div>
+        <ul class="socials" aria-label="Profiles">
+          <li><a href="https://github.com/proxykhan" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/md-azhar-khan" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a></li>
+          <li><a href="mailto:mdazhark79@gmail.com" aria-label="Email"><svg class="icon"><use href="#i-mail"/></svg></a></li>
+          <li><a href="https://huggingface.co/Azharkhan79" target="_blank" rel="noopener" aria-label="Hugging Face"><svg class="icon"><use href="#i-smile"/></svg></a></li>
+        </ul>
       </div>
 
       <div class="container">
@@ -213,50 +191,68 @@
         </div>
 
         <div class="about-grid">
-          <div class="about-text reveal">
-            <p>
-              I'm an AI/ML engineer with a B.E. in Artificial Intelligence &amp; Machine Learning (2026). At
-              <strong>Invisible Technologies</strong> I review and correct LLM-generated code for benchmarking programs
-              run by frontier AI labs, so I spend my days finding exactly where a model's logic goes wrong.
-            </p>
-            <p>
-              Outside of that, I build and deploy complete ML systems: a <strong>LightGBM electricity demand forecaster</strong>
-              with drift monitoring and automatic retraining, a <strong>7-agent research assistant</strong> on LangGraph, and a
-              <strong>hybrid knowledge-graph RAG</strong> system that answers multi-hop questions with verified citations.
-              I care about honest evaluation: real baselines, walk-forward backtests and tests that run on every commit.
-            </p>
-            <p>
-              I work mainly in <strong>Python</strong> with scikit-learn, PyTorch, FastAPI, PostgreSQL and Docker.
-            </p>
+          <div class="about-photo reveal">
+            <div class="portrait">
+              <div class="portrait-frame">
+                <img src="assets/img/avatar.jpg" alt="Portrait of Mohammed Azhar Khan" width="460" height="460">
+              </div>
+              <span class="float-chip chip-a">LightGBM</span>
+              <span class="float-chip chip-b">LangGraph</span>
+              <span class="float-chip chip-c">FastAPI</span>
+              <div class="now-card">
+                <span class="now-label">Now</span>
+                <span class="now-title">AI Trainer</span>
+                <span class="now-org">Invisible Technologies</span>
+              </div>
+            </div>
           </div>
 
-          <aside class="facts reveal" aria-label="Quick facts">
-            <ul>
-              <li><svg class="icon"><use href="#i-pin"/></svg><div><span>Based in</span><strong>Kalaburagi, India</strong></div></li>
-              <li><svg class="icon"><use href="#i-briefcase"/></svg><div><span>Currently</span><strong>Data Annotator / AI Trainer, Invisible Technologies</strong></div></li>
-              <li><svg class="icon"><use href="#i-cap"/></svg><div><span>Education</span><strong>B.E. AI &amp; ML, P.D.A. College of Engineering (VTU)</strong></div></li>
-              <li><svg class="icon"><use href="#i-trophy"/></svg><div><span>Recognition</span><strong>Best Pitch Award, KK Startup Conclave 2024</strong></div></li>
-            </ul>
-          </aside>
+          <div class="about-main">
+            <div class="about-text reveal">
+              <p>
+                I'm an AI/ML engineer with a B.E. in Artificial Intelligence &amp; Machine Learning (2026). At
+                <strong>Invisible Technologies</strong> I review and correct LLM-generated code for benchmarking programs
+                run by frontier AI labs, so I spend my days finding exactly where a model's logic goes wrong.
+              </p>
+              <p>
+                Outside of that, I build and deploy complete ML systems: a <strong>LightGBM electricity demand forecaster</strong>
+                with drift monitoring and automatic retraining, a <strong>7-agent research assistant</strong> on LangGraph, and a
+                <strong>hybrid knowledge-graph RAG</strong> system that answers multi-hop questions with verified citations.
+                I care about honest evaluation: real baselines, walk-forward backtests and tests that run on every commit.
+              </p>
+              <p>
+                I work mainly in <strong>Python</strong> with scikit-learn, PyTorch, FastAPI, PostgreSQL and Docker.
+              </p>
+            </div>
+
+            <aside class="facts reveal" aria-label="Quick facts">
+              <ul>
+                <li><svg class="icon"><use href="#i-pin"/></svg><div><span>Based in</span><strong>Kalaburagi, India</strong></div></li>
+                <li><svg class="icon"><use href="#i-briefcase"/></svg><div><span>Currently</span><strong>Data Annotator / AI Trainer, Invisible Technologies</strong></div></li>
+                <li><svg class="icon"><use href="#i-cap"/></svg><div><span>Education</span><strong>B.E. AI &amp; ML, P.D.A. College of Engineering (VTU)</strong></div></li>
+                <li><svg class="icon"><use href="#i-trophy"/></svg><div><span>Recognition</span><strong>Best Pitch Award, KK Startup Conclave 2024</strong></div></li>
+              </ul>
+            </aside>
+          </div>
         </div>
 
         <ul class="pillars">
-          <li class="pillar spot reveal">
+          <li class="pillar reveal">
             <span class="pillar-icon"><svg class="icon"><use href="#i-chart"/></svg></span>
             <h3>End-to-end ML systems</h3>
             <p>Data ingestion, features, walk-forward backtests against real baselines, and APIs that log every prediction they serve.</p>
           </li>
-          <li class="pillar spot reveal">
+          <li class="pillar reveal">
             <span class="pillar-icon"><svg class="icon"><use href="#i-bot"/></svg></span>
             <h3>LLM agents &amp; RAG</h3>
             <p>Multi-agent LangGraph pipelines and hybrid graph + vector retrieval, with citations checked in code, not by trust.</p>
           </li>
-          <li class="pillar spot reveal">
+          <li class="pillar reveal">
             <span class="pillar-icon"><svg class="icon"><use href="#i-server"/></svg></span>
             <h3>MLOps &amp; monitoring</h3>
             <p>Docker, GitHub Actions CI/CD, MLflow tracking, Evidently drift checks and retraining that must win before it ships.</p>
           </li>
-          <li class="pillar spot reveal">
+          <li class="pillar reveal">
             <span class="pillar-icon"><svg class="icon"><use href="#i-shield"/></svg></span>
             <h3>LLM evaluation</h3>
             <p>Grading model-written code for frontier-lab benchmarks and turning production failures into retraining data.</p>
@@ -276,7 +272,7 @@
         <ol class="timeline">
           <li class="tl-item reveal">
             <div class="tl-marker" aria-hidden="true"></div>
-            <article class="tl-card spot">
+            <article class="tl-card">
               <header class="tl-head">
                 <div>
                   <h3>Data Annotator / AI Trainer</h3>
@@ -300,7 +296,7 @@
 
           <li class="tl-item reveal">
             <div class="tl-marker" aria-hidden="true"></div>
-            <article class="tl-card spot">
+            <article class="tl-card">
               <header class="tl-head">
                 <div>
                   <h3>Python with Generative AI Intern</h3>
@@ -337,7 +333,7 @@
           <!-- NEM Forecast -->
           <article class="project reveal">
             <div class="project-media">
-              <div class="browser spot">
+              <div class="browser">
                 <div class="browser-bar"><i></i><i></i><i></i><span>nem-forecast.vercel.app</span></div>
                 <img src="assets/img/nem-dashboard.png" alt="NEM Forecast monitoring dashboard: latest demand forecast with an 80% interval, realised error by horizon and drift checks" loading="lazy" width="1280" height="2170" class="img-top">
               </div>
@@ -372,7 +368,7 @@
           <!-- ResearchForge AI -->
           <article class="project reveal">
             <div class="project-media">
-              <div class="browser spot">
+              <div class="browser">
                 <div class="browser-bar"><i></i><i></i><i></i><span>researchforge · agent graph</span></div>
                 <div class="agent-graph">
                   <svg viewBox="0 0 640 440" role="img" aria-labelledby="ag-title ag-desc">
@@ -449,7 +445,7 @@
           <!-- Knowledge Graph RAG -->
           <article class="project reveal">
             <div class="project-media">
-              <div class="browser spot">
+              <div class="browser">
                 <div class="browser-bar"><i></i><i></i><i></i><span>knowledge-graph-rag · architecture</span></div>
                 <img src="assets/img/kgrag-architecture.svg" alt="Knowledge Graph RAG architecture: ingestion writes a Neo4j graph and a pgvector index that share chunk_id; questions are routed to graph templates or vector search, then answered with validated citations" loading="lazy" width="1220" height="760" class="img-contain">
               </div>
@@ -483,7 +479,7 @@
           <!-- Business Idea Creator -->
           <article class="project reveal">
             <div class="project-media">
-              <div class="browser spot">
+              <div class="browser">
                 <div class="browser-bar"><i></i><i></i><i></i><span>business-idea-creator</span></div>
                 <img src="assets/img/business-idea.png" alt="Business Idea Creator interface with industry, target audience and market trend selectors" loading="lazy" width="907" height="846" class="img-top">
               </div>
@@ -526,27 +522,27 @@
         </div>
 
         <div class="skills-grid">
-          <article class="skill-card spot reveal">
+          <article class="skill-card reveal">
             <header><span class="skill-icon"><svg class="icon"><use href="#i-code"/></svg></span><h3>Languages</h3></header>
             <ul class="chips"><li>Python</li><li>SQL</li></ul>
           </article>
-          <article class="skill-card spot reveal">
+          <article class="skill-card reveal">
             <header><span class="skill-icon"><svg class="icon"><use href="#i-chart"/></svg></span><h3>ML / DL &amp; Data</h3></header>
             <ul class="chips"><li>Scikit-learn</li><li>LightGBM</li><li>PyTorch</li><li>TensorFlow</li><li>Keras</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li></ul>
           </article>
-          <article class="skill-card spot reveal">
+          <article class="skill-card reveal">
             <header><span class="skill-icon"><svg class="icon"><use href="#i-sparkles"/></svg></span><h3>GenAI &amp; LLMs</h3></header>
             <ul class="chips"><li>LLM Evaluation</li><li>Model Benchmarking</li><li>Prompt Engineering</li><li>RAG</li><li>LangGraph</li><li>LangChain</li><li>Multi-Agent Systems</li></ul>
           </article>
-          <article class="skill-card spot reveal">
+          <article class="skill-card reveal">
             <header><span class="skill-icon"><svg class="icon"><use href="#i-server"/></svg></span><h3>Backend &amp; MLOps</h3></header>
             <ul class="chips"><li>FastAPI</li><li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>GitHub Actions</li><li>Evidently</li><li>MLflow</li><li>REST APIs</li></ul>
           </article>
-          <article class="skill-card spot reveal">
+          <article class="skill-card reveal">
             <header><span class="skill-icon"><svg class="icon"><use href="#i-layers"/></svg></span><h3>Tools</h3></header>
             <ul class="chips"><li>Git</li><li>Jupyter</li><li>MySQL</li><li>Vercel</li><li>Render</li></ul>
           </article>
-          <article class="skill-card spot reveal">
+          <article class="skill-card reveal">
             <header><span class="skill-icon"><svg class="icon"><use href="#i-database"/></svg></span><h3>Also used in my projects</h3></header>
             <ul class="chips chips-soft"><li>Neo4j</li><li>pgvector</li><li>Next.js</li><li>TypeScript</li><li>Optuna</li><li>Hugging Face</li><li>Ollama</li><li>Terraform</li><li>React</li><li>Tailwind CSS</li></ul>
           </article>
@@ -563,7 +559,7 @@
         </div>
 
         <div class="edu-grid">
-          <article class="edu-card spot reveal">
+          <article class="edu-card reveal">
             <span class="edu-icon"><svg class="icon"><use href="#i-cap"/></svg></span>
             <p class="edu-kicker">Aug 2022 – Jun 2026</p>
             <h3>B.E., Artificial Intelligence and Machine Learning</h3>
@@ -574,7 +570,7 @@
             </div>
           </article>
 
-          <article class="edu-card award spot reveal">
+          <article class="edu-card award reveal">
             <span class="edu-icon"><svg class="icon"><use href="#i-trophy"/></svg></span>
             <p class="edu-kicker">2024 · Achievement</p>
             <h3>Best Pitch Award</h3>
@@ -585,11 +581,11 @@
 
         <h3 class="sub-head reveal"><svg class="icon"><use href="#i-award"/></svg> Certifications</h3>
         <ul class="certs">
-          <li class="cert spot reveal"><span class="cert-issuer">Oracle</span><strong>Oracle Cloud Infrastructure Data Science Professional</strong></li>
-          <li class="cert spot reveal"><span class="cert-issuer">Google</span><strong>AI Fundamentals</strong></li>
-          <li class="cert spot reveal"><span class="cert-issuer">Ethnotech</span><strong>Python with Data Science</strong></li>
-          <li class="cert spot reveal"><span class="cert-issuer">NPTEL</span><strong>Internet of Things</strong></li>
-          <li class="cert spot reveal"><span class="cert-issuer">Cisco</span><strong>Advanced C Programming</strong></li>
+          <li class="cert reveal"><span class="cert-issuer">Oracle</span><strong>Oracle Cloud Infrastructure Data Science Professional</strong></li>
+          <li class="cert reveal"><span class="cert-issuer">Google</span><strong>AI Fundamentals</strong></li>
+          <li class="cert reveal"><span class="cert-issuer">Ethnotech</span><strong>Python with Data Science</strong></li>
+          <li class="cert reveal"><span class="cert-issuer">NPTEL</span><strong>Internet of Things</strong></li>
+          <li class="cert reveal"><span class="cert-issuer">Cisco</span><strong>Advanced C Programming</strong></li>
         </ul>
       </div>
     </section>
