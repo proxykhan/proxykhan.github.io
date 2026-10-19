@@ -1,6 +1,6 @@
 /* =========================================================
    Mohammed Azhar Khan · Portfolio
-   Cream canvas, black outlines, hard shadows, yellow accent.
+   Cream canvas, black outlines, hard shadows, cobalt accent.
    ========================================================= */
 
 /* ---------- Tokens ---------- */
@@ -18,9 +18,10 @@
   --ink-subtle: rgba(22, 22, 22, 0.6);
   --line: rgba(22, 22, 22, 0.16);
   --chip-line: rgba(22, 22, 22, 0.28);
-  --accent: #facc00;
-  --accent-soft: rgba(250, 204, 0, 0.35);
-  --accent-ink: #161616;
+  --accent: #2f5bff;
+  --accent-soft: rgba(47, 91, 255, 0.16);
+  --accent-tint: #d6dfff;
+  --accent-ink: #ffffff;
   --border: #161616;
   --header-bg: rgba(247, 245, 238, 0.96);
   --live: #16a34a;
@@ -41,9 +42,10 @@
   --ink-subtle: rgba(242, 239, 230, 0.62);
   --line: rgba(242, 239, 230, 0.16);
   --chip-line: rgba(242, 239, 230, 0.3);
-  --accent: #facc00;
-  --accent-soft: rgba(250, 204, 0, 0.28);
-  --accent-ink: #161616;
+  --accent: #2f5bff;
+  --accent-soft: rgba(47, 91, 255, 0.3);
+  --accent-tint: rgba(47, 91, 255, 0.45);
+  --accent-ink: #ffffff;
   --border: #f2efe6;
   --header-bg: rgba(20, 20, 19, 0.96);
   --live: #4ade80;
@@ -464,7 +466,7 @@ code {
   line-height: 1;
   letter-spacing: -0.03em;
   font-variant-numeric: tabular-nums;
-  background: linear-gradient(transparent 62%, var(--accent) 62%, var(--accent) 92%, transparent 92%);
+  background: linear-gradient(transparent 62%, var(--accent-tint) 62%, var(--accent-tint) 92%, transparent 92%);
   padding: 0 2px;
 }
 .stat-label { display: block; margin-top: 12px; font-size: 0.92rem; line-height: 1.45; color: var(--ink-muted); }
@@ -521,7 +523,7 @@ code {
 }
 .section-sub { margin-top: 14px; font-size: 1.06rem; color: var(--ink-muted); }
 .section-sub a { color: var(--ink); font-weight: 600; box-shadow: inset 0 -0.4em 0 var(--accent-soft); }
-.section-sub a:hover { box-shadow: inset 0 -1.2em 0 var(--accent); color: #161616; }
+.section-sub a:hover { box-shadow: inset 0 -1.2em 0 var(--accent); color: var(--accent-ink); }
 
 /* Shared tags (outlined chips) */
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -726,8 +728,8 @@ code {
   font-size: 0.8rem;
   font-weight: 600;
 }
-.badge-accent { background: var(--accent); color: var(--accent-ink); border-color: #161616; }
-.badge-accent .pulse-dot { width: 7px; height: 7px; background: #fff; border-color: #161616; }
+.badge-accent { background: var(--accent); color: var(--accent-ink); border-color: var(--border); }
+.badge-accent .pulse-dot { width: 7px; height: 7px; background: #fff; border-color: var(--border); }
 .badge-accent .pulse-dot::after { background: #fff; }
 
 .tl-points { margin: 20px 0 22px; display: grid; gap: 10px; }
@@ -827,7 +829,7 @@ code {
 }
 .ag-out rect { fill: var(--accent); stroke: var(--border); stroke-width: 2; }
 .ag-out .ag-name,
-.ag-out .ag-role { fill: #161616; }
+.ag-out .ag-role { fill: var(--accent-ink); }
 .ag-name { font-family: var(--font); font-size: 18px; font-weight: 700; fill: var(--ink); }
 .ag-role { font-family: var(--font); font-size: 13px; fill: var(--ink-subtle); }
 .ag-foot { font-family: var(--font); font-size: 13.5px; font-weight: 500; fill: var(--ink-muted); }
@@ -849,13 +851,13 @@ code {
   gap: 7px;
   padding: 2px 10px;
   border-radius: var(--radius-chip);
-  border: 1px solid #161616;
+  border: 1px solid var(--border);
   background: var(--accent);
   color: var(--accent-ink);
   font-weight: 700;
   letter-spacing: 0.08em;
 }
-.live .pulse-dot { width: 7px; height: 7px; background: #fff; border-color: #161616; }
+.live .pulse-dot { width: 7px; height: 7px; background: #fff; border-color: var(--border); }
 .live .pulse-dot::after { background: #fff; }
 
 .project-title {
@@ -984,10 +986,10 @@ code {
 .award .edu-icon { background: var(--surface); color: var(--ink); }
 .award,
 .award h3,
-.award strong { color: #161616; }
+.award strong { color: var(--accent-ink); }
 .award .edu-kicker,
 .award .edu-school,
-.award .award-text { color: rgba(22, 22, 22, 0.78); }
+.award .award-text { color: rgba(255, 255, 255, 0.84); }
 [data-theme="dark"] .award { border-color: var(--accent); }
 [data-theme="dark"] .award .edu-icon { background: #ffffff; color: #161616; border-color: #161616; }
 
@@ -1036,7 +1038,7 @@ code {
   display: inline-block;
   padding: 1px 8px;
   border-radius: 6px;
-  border: 1px solid #161616;
+  border: 1px solid var(--border);
   background: var(--accent);
   color: var(--accent-ink);
   font-size: 0.7rem;
@@ -1097,7 +1099,7 @@ code {
 .contact-list a,
 .contact-list strong { font-size: 1.02rem; font-weight: 600; color: var(--ink); overflow-wrap: anywhere; }
 .contact-list a { box-shadow: inset 0 -0.35em 0 var(--accent-soft); transition: box-shadow 0.2s ease; }
-.contact-list a:hover { box-shadow: inset 0 -1.2em 0 var(--accent); color: #161616; }
+.contact-list a:hover { box-shadow: inset 0 -1.2em 0 var(--accent); color: var(--accent-ink); }
 
 .copy-btn { width: 36px; height: 36px; }
 .copy-btn .icon { width: 15px; height: 15px; }
@@ -1231,9 +1233,9 @@ code {
   width: 28px;
   height: 28px;
   border-radius: 8px;
-  border: 1.5px solid #161616;
+  border: 1.5px solid var(--border);
   background: var(--accent);
-  color: #161616;
+  color: var(--accent-ink);
   font-size: 0.85rem;
   font-weight: 700;
 }
@@ -1289,7 +1291,7 @@ code {
 @keyframes pop { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
 @keyframes node-pulse {
   0%, 100% { fill: var(--surface); }
-  8%, 22% { fill: var(--accent-soft); }
+  8%, 22% { fill: var(--accent-tint); }
 }
 
 /* ---------- Responsive ---------- */
